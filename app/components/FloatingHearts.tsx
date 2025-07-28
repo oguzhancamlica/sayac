@@ -47,7 +47,7 @@ export default function FloatingHearts() {
             animation: `float-heart ${heart.animationDuration}s linear forwards`
           }}
         >
-          <div className="text-pink-400 opacity-60">❤️</div>
+          <div className="text-pink-400 opacity-60">🩷</div>
         </div>
       ))}
     </div>
