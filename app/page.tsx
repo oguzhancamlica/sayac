@@ -11,8 +11,7 @@ export default function Home() {
     seconds: 0
   })
 
-  const now = new Date()
-  const targetTime = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 7, 20, 0, 0, 0)
+  const targetTime = new Date(2025, 7, 2, 18, 0, 0, 0) // 2 Ağustos 2024, 18:00
 
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -104,7 +103,7 @@ export default function Home() {
           <div className="inline-flex items-center space-x-1 sm:space-x-2 bg-pink-500 text-white px-2 sm:px-3 md:px-4 lg:px-6 py-1.5 sm:py-2 md:py-3 rounded-full shadow-lg text-xs sm:text-sm md:text-base">
             <span className="text-sm sm:text-lg md:text-xl lg:text-2xl">⏰</span>
             <span className="font-semibold">
-              {targetTime.toLocaleDateString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long' })} günü 20:00'da kavuşacağız!
+              {targetTime.toLocaleDateString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long' })} günü 18:00'da kavuşacağız!
             </span>
           </div>
         </div>
